@@ -17,7 +17,7 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin: ["https://deploy-mern-frontend.vercel.app"],
+    origin: ["https://chat-app-frontend-kohl.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true,
   })
