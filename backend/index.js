@@ -15,13 +15,7 @@ dotenv.config();
  mongoose.connect("mongodb+srv://sumit1412:SUMIT141201@cluster0.hc7sl9w.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  console.log(`MongoDB Connected:`.cyan.underline);
 const app = express();
-app.use(
-  cors({
-    origin: ["https://chat-app-frontend-kohl.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials: true,
-  })
-);
+
 app.use(express.json()); // to accept json data
 
 // app.get("/", (req, res) => {

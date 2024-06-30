@@ -41,7 +41,7 @@ const Login = () => {
       };
 
       const { data } = await axios.post(
-        "https://chat-app-kappa-seven-68.vercel.app/",
+        "/api/user/login",
         { email, password },
         config
       );
